@@ -24,6 +24,19 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes)) minutes")
                         .accessibilityHidden(true)
                 }
+                NavigationLink(destination: {
+                    ThemePicker(selection: $data.theme)
+                }, label: {
+                    HStack {
+                        Text("Theme")
+                        Spacer()
+                        Text(data.theme.name)
+                            .padding(4)
+                            .foregroundColor(data.theme.accentColor)
+                            .background(data.theme.mainColor)
+                            .cornerRadius(4)
+                    }
+                })
             }
             Section(header: Text("Attendees")) {
                 ForEach(data.attendees) { attendee in

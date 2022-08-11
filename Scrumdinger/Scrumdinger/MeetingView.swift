@@ -1,9 +1,6 @@
-//
-//  ContentView.swift
-//  Scrumdinger
-//
-//  Created by lcabraja on 8/11/22.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
 
 import SwiftUI
 
@@ -25,7 +22,7 @@ struct MeetingView: View {
                 }
             }
             .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Time Remaining")
+            .accessibilityLabel("Time remaining")
             .accessibilityValue("10 minutes")
             Circle()
                 .strokeBorder(lineWidth: 24)
@@ -35,7 +32,7 @@ struct MeetingView: View {
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
                 }
-                .accessibilityLabel("Next Speaker")
+                .accessibilityLabel("Next speaker")
             }
         }
         .padding()

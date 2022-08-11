@@ -1,9 +1,7 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by lcabraja on 8/11/22.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
+
 
 import SwiftUI
 
@@ -31,7 +29,6 @@ enum Theme: String {
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-    
     var mainColor: Color {
         Color(rawValue)
     }

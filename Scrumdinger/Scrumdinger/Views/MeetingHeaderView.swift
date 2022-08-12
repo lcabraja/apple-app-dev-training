@@ -27,7 +27,7 @@ struct MeetingHeaderView: View {
     
     var body: some View {
         VStack {
-            ProgressView(value: Double(secondsElapsed), total: Double(secondsRemaining))
+            ProgressView(value: Double(secondsElapsed), total: Double(secondsElapsed + secondsRemaining))
                 .progressViewStyle(ScrumProgressViewStyle(theme: theme))
             HStack {
                 VStack(alignment: .leading) {
